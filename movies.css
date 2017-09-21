@@ -1,0 +1,272 @@
+body{
+	background-color: rgba(200, 190, 130, 0.42);
+}
+
+/*first page starts*/
+
+div.header{
+	width: 100%;
+	height: 160px;
+}
+
+div.navbar-header{
+	width: 100%;
+	background-color: rgba(185, 147, 61, 0.52);
+	font-family: monospace;
+	font-size: 30px;
+	border-radius: 4px;
+	position: fixed;
+    z-index: 1020;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+
+
+h1.header-font{
+    float: left;
+	margin-top: 68px;
+}
+
+h1.container-font{
+	width: 100%;
+	background-color: black;
+}
+
+img.navbar-brand{
+    float: left;
+	width: 180px;
+	height: 160px;
+	border-radius: 50px;
+	color: rgba(0,0,0,0);
+	opacity: 0.9;
+}
+
+div.navbar-icons{
+	float: right;
+    margin-right: 40px;
+    margin-top: 86px;
+}
+
+.movies.btn-default {
+	/*margin-bottom: -40px;*/
+	margin-right: 10px;
+    color: #9f584a;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);;
+}
+
+div.container{
+	width: 100%;
+	/*height: 500px;*/
+	/*padding-left: 0;*/
+	/*padding-right: 0;*/
+	/*margin-left: 15px;*/
+	/*margin-right: 15px;*/
+}
+
+img.poster_style{
+    width: 290px;
+    height: 240px;
+}
+
+/*
+hr.divider{
+	margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #c5b8b8;
+}
+*/
+
+div.row{
+	/*background-color: #c7bfaf;*/
+	font-family: monospace;
+	/*font-size: 30px;*/
+	/*margin-top: 20px;*/
+}
+
+div.caption{
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 390px;
+}
+
+h3.movie-title{
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+p.movie-title{
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.btn-primary {
+    color: #fffefe;
+    background-color: #9a7658;
+    border-color: #9a7658; 
+}
+
+.btn-primary:hover{
+	background-color: #9a7658;
+}
+
+p.copyright{
+	text-align: center;
+	/*position: fixed;*/
+}
+
+/*second page starts*/
+
+div.container-discription{
+	margin-left: 10px;
+	margin-right: 10px;
+    margin-top: 20px;
+	border: 1px solid #f5eee0;
+	border-radius: 4px;
+	background-color: #f5eee0;
+}
+
+h3.container-header{
+	/*border: 0px solid #c7bfaf;*/
+	border-radius: 4px;
+	background-color: rgba(228, 195, 131, 0.26);
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+img.discription-image{
+	width: 50%;
+	height: 400px;
+	float: left;
+	margin-left: 10px;
+	border-radius: 8px;
+}
+
+.discription-content{
+	height: 400px;
+}
+
+.second.btn-primary{
+	width: 200px;
+}
+
+div.row-secondpage{
+
+}
+
+/*third page*/
+
+.container.booking{
+	/*height: 500px;*/
+}
+
+.row.text-center.booking{
+	/*height: 400px;*/
+}
+
+.container-discription.booking{
+	height: 400px;
+}
+
+.movie{
+	width: 25%;
+  	margin: 0 auto;
+  	margin-top: 40px;
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+}
+
+li.item1 ,li.item2{
+  margin: 0em 0 2em;
+    list-style-type: none;
+}
+
+.menu > li > a {
+    width: 100%;
+    margin: 0 auto;
+    line-height: 50px;
+    text-indent: 60px;
+    letter-spacing: 2px;
+    display: block;
+    color: #46E8DE;
+    font-size: 1.1em;
+    text-decoration: none;
+    background: rgba(51, 51, 51, 0.79);
+    font-family: Nunito-Regular;
+    font-weight: bold;
+}
+
+.menu ul li a {
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+    line-height: 3em;
+    color: #fff;
+    background-color: rgba(66, 76, 85, 0.48);
+    font-family: Cabin-Regular;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.menu ul li a:hover{
+	background: #fbfbfb;
+	color: #000;
+}
+
+i.menu-down{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.menu > li > a:hover, .menu > li > a.active {
+    color: #33CFE0;
+}
+
+.menu ul.kid-menu li a{
+	border-bottom: none;
+}
+
+ul.cute {
+    width: 100%;
+    margin: 0;
+}
+
+ul.kid-menu li{
+	list-style: none;
+	border-bottom: 1px solid #ddd;
+}
+
+ul.kid-menu li.menu-kid-left{
+	border-bottom:none;
+}
+ul.cute li{
+	background: rgba(103, 114, 123, 0.32);
+}
+
+
+/*images html page*/
+
+div.container.images{
+        margin-top: 30px;
+}
+
+img.gallary{
+    
+}

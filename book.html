@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html ng-app="movieApp">
+<head>
+	<title>fundaytoday</title>
+
+	<!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/movies.css" rel="stylesheet">
+</head>
+<body>
+
+	<!-- header starts -->
+	<div class="header" >
+		<div class="navbar-header">
+			<a href="#"><img class="navbar-brand" alt="fundaytoday" src="images/logo.png"></a>
+            <h1 class="header-font">be a part of daily enjoyment</h1>
+            <div class="navbar-icons">
+                 <a href="index.html" class="movies btn btn-default" title="home">
+                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                </a>
+                <a href="about.html" class="movies btn btn-default" title="about">
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                </a>
+                <a href="images.html" class="movies btn btn-default" title="images">
+                    <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+                </a>
+                <a href="videos.html" class="movies btn btn-default" title="videos">
+                    <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>
+                </a>
+            </div>
+		</div>
+	</div>
+	<!-- header ends -->
+
+	<div class="container booking" ng-controller="bookmovie">
+        <div class="row booking">
+            <!-- the booking details -->
+            <div class="container-discription booking">
+                <h3 class="container-header">Book Your Ticket and Enjoy the Day with masth movie</h3>
+                <!-- the contents to be filled -->
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                            <div class="thumbnail">
+                            <img ng-src="images/{{movieDetails.movie_poster}}" alt="{{movieDetails.movie_name}}">
+                            <div class="caption">
+                                <h3 class="movie-name text-center">{{movieDetails.movie_name}}</h3>
+                                <p class="movie-type">{{movieDetails.movie_type}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <form class="thumbnail">
+                            <div class="row">
+                                <div class="col-md-3 form-group text-right">
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <input type="text" class="form-control" ng-model="bookinginfo.name" ng-value="bookinginfo.name" id="name" placeholder="Enter Name">
+                                </div>
+                                <div class="col-md-3 form-group text-right">
+                                    <label for="email">Email address</label>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <input type="text" class="form-control" ng-model="bookinginfo.email" ng-value="bookinginfo.email" id="email" placeholder="Enter Email">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 form-group text-right">
+                                    <label for="seats">No. of Seats</label>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <select name="seats" class="form-control" id="seats"  ng-model="bookinginfo.seats" ng-value="bookinginfo.seats">
+                                        <option value="0">Select No. of Seats</option>
+                                        <option value="1">1</option>
+                                        <option value="2" selected>2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3 form-group text-right">
+                                    <label for="date">Date</label>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <input type="text" class="form-control" id="date"   ng-model="bookinginfo.date" ng-value="bookinginfo.date">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <button type="button" ng-click="validatenbook();" class="btn btn-primary">Submit</button>
+                                    <button type="reset" class="btn btn-default">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="copyright">Copyright & copy is by fundaytoday 2017</p>
+                </div>
+            </div>
+        </footer>
+    	<!-- footer ends -->
+
+	</div>
+	<!-- container ends -->
+
+	 <!-- jQuery -->
+     <script src="js/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- angular min and movie angular file link -->
+    <script src="js/angular.min.js"></script>
+
+    <script src="js/movieapp.js"></script>
+
+</body>
+</html>
